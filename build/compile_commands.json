@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/alexey/Git/CppPrj/Update_field/build",
+  "command": "/bin/c++   -g -std=gnu++17 -o CMakeFiles/Update_field.dir/update_field.cpp.o -c /home/alexey/Git/CppPrj/Update_field/update_field.cpp",
+  "file": "/home/alexey/Git/CppPrj/Update_field/update_field.cpp"
+}
+]

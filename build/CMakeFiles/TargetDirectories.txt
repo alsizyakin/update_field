@@ -1,0 +1,3 @@
+/home/alexey/Git/CppPrj/Update_field/build/CMakeFiles/rebuild_cache.dir
+/home/alexey/Git/CppPrj/Update_field/build/CMakeFiles/edit_cache.dir
+/home/alexey/Git/CppPrj/Update_field/build/CMakeFiles/Update_field.dir
