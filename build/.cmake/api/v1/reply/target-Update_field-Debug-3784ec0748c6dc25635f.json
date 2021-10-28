@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Update_field"
+			"path" : "Update_field.exe"
+		},
+		{
+			"path" : "Update_field.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -10,8 +13,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
-			"set_property"
+			"add_executable"
 		],
 		"files" : 
 		[
@@ -27,12 +29,6 @@
 				"file" : 0,
 				"line" : 4,
 				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 10,
-				"parent" : 0
 			}
 		]
 	},
@@ -42,21 +38,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g  "
 				},
 				{
 					"fragment" : "-std=gnu++17"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					2
-				],
-				"standard" : "17"
-			},
 			"sourceIndexes" : 
 			[
 				0
@@ -73,14 +61,18 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-rdynamic",
+				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "Update_field",
-	"nameOnDisk" : "Update_field",
+	"nameOnDisk" : "Update_field.exe",
 	"paths" : 
 	{
 		"build" : ".",

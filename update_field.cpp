@@ -10,7 +10,7 @@ bool operator<(Date lhs, Date rhs)
     return 10000 * lhs.year + 100 * lhs.month + lhs.day < 10000 * rhs.year + 100 * rhs.month + rhs.day;
 }
 
-istream &operator>>(istream &potok, Date date)
+istream &operator>>(istream &potok, Date &date)
 {
     int year, month, day;
     char r1, r2;
@@ -19,18 +19,23 @@ istream &operator>>(istream &potok, Date date)
     {
         //throw invalid_argument("Wrong date format: " + potok.str());
     }
+    date.year = year;
+    date.month = month;
+    date.day = day;
     return potok;
 }
 
-istream &operator>>(istream &potok, Time time)
+istream &operator>>(istream &potok, Time &time)
 {
-    int hour, minute;
+    int hours, minutes;
     char r1;
-    potok >> hour >> r1 >> minute;
+    potok >> hours >> r1 >> minutes;
     if (r1 != ':')
     {
         //throw invalid_argument("Wrong date format: " + potok.str());
     }
+    time.hours = hours;
+    time.minutes = minutes;
     return potok;
 }
 
@@ -44,6 +49,7 @@ std::ostream &operator<<(ostream &os, Date date)
 std::ostream &operator<<(ostream &os, Time time)
 {
     os << time.hours << ":" << time.minutes << std::endl;
+    return os;
 }
 
 
@@ -58,25 +64,17 @@ bool operator==(Date lhs, Date rhs)
 }
 
 
-#define UPDATE_FIELD(ticket, field, values) map<string, string>::const_iterator it;\
-                                            it = values.find(#field);\
-                                            if (it != values.end()) {\
-                                                istringstream is(it->second);\
-                                                is >> ticket.field;\
-                                                }// Реализуйте этот макрос, а также необходимые операторы для классов Date и Time
+#define UPDATE_FIELD(ticket, field, values) {\
+                                                map<string, string>::const_iterator it;\
+                                                it = values.find(#field);\
+                                                if (it != values.end()) {\
+                                                    istringstream is(it->second);\
+                                                    is >> ticket.field;\
+                                                }\
+                                            }
 
-void UpdateTicket(AirlineTicket &ticket, const map<string, string> &updates)
-{
-    
 
-    UPDATE_FIELD(ticket, to, updates);
-    UPDATE_FIELD(ticket, from, updates);
-    UPDATE_FIELD(ticket, price, updates);
-    UPDATE_FIELD(ticket, airline, updates);
-}
-
-void TestUpdate()
-{
+void TestUpdate(){
     AirlineTicket t;
     t.price = 0;
 

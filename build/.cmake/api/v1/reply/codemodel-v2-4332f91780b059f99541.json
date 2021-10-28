@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Update_field::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Update_field-Debug-ff87683c1f27d2f161ab.json",
+					"jsonFile" : "target-Update_field-Debug-3784ec0748c6dc25635f.json",
 					"name" : "Update_field",
 					"projectIndex" : 0
 				}
@@ -48,12 +48,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/alexey/Git/CppPrj/Update_field/build",
-		"source" : "/home/alexey/Git/CppPrj/Update_field"
+		"build" : "D:/Git/Eclipse/update_field/build",
+		"source" : "D:/Git/Eclipse/update_field"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 2
+		"minor" : 0
 	}
 }

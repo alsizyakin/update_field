@@ -1,7 +1,7 @@
 [
 {
-  "directory": "/home/alexey/Git/CppPrj/Update_field/build",
-  "command": "/bin/c++   -g -std=gnu++17 -o CMakeFiles/Update_field.dir/update_field.cpp.o -c /home/alexey/Git/CppPrj/Update_field/update_field.cpp",
-  "file": "/home/alexey/Git/CppPrj/Update_field/update_field.cpp"
+  "directory": "D:/Git/Eclipse/update_field/build",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\X86_64~2.EXE    -g   -std=gnu++17 -o CMakeFiles\\Update_field.dir\\update_field.cpp.obj -c D:\\Git\\Eclipse\\update_field\\update_field.cpp",
+  "file": "D:/Git/Eclipse/update_field/update_field.cpp"
 }
 ]
